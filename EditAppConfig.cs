@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,9 +38,9 @@ namespace AppConfig
                     string connectionString = string.Format("Server={0}; port={1}; user id={2}; password={3}; database={4};", textBoxServer.Text, textBoxPort.Text, textBoxUserID.Text, textBoxPassword.Text, textBoxDatabase.Text);
                     try
                     {
-                Connection connection = new Connection();
-                        //Connection conn = new Connection(connectionString);
-                        if (connection.isConnection)
+                Connection conn = new Connection();
+                        //Connection connection = new Connection(connectionString);
+                        if (conn.isConnection)
                         {
                             Config setting = new Config();
                             setting.SaveConnectionString("Database", connectionString);
@@ -56,7 +56,7 @@ namespace AppConfig
 
                 private void buttonTest_Click(object sender, EventArgs e)
                 {
-            
+           
                     string connectionString = string.Format("Server={0}; port={1}; user id={2}; password={3}; database={4};", textBoxServer.Text, textBoxPort.Text, textBoxUserID.Text, textBoxPassword.Text, textBoxDatabase.Text);
                     try
                     {
@@ -68,7 +68,7 @@ namespace AppConfig
                     {
                         labelInfo.Text = " Системное сообщение: ошика подключения";
                     }
-       
+    
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
