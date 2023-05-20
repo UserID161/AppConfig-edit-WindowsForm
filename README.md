@@ -16,13 +16,13 @@
 * Поле Password - пароль пользователя БД
 * Поле Databace - название БД
 1.Класс Conection:
- _ Для сохранения записи:
+ - Для сохранения записи:
   ```
   srting Query = "SQL запрос";
   Connection connection = new Connection();
   connection.Execute(Query);
   ```
-_Для отображения данных:
+ - Для отображения данных:
   ```
   string Query = "SELECT * FROM public.users";
   var reader = new Connection().Select(Query);
