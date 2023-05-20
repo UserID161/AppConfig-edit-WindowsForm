@@ -15,15 +15,15 @@
 * Поле User ID - имя пользователя БД
 * Поле Password - пароль пользователя БД
 * Поле Databace - название БД
-<br>
+
 Класс Connection:
-* Для сохранения записи:
+- Для сохранения записи:
   ```
   srting Query = "SQL запрос";
   Connection connection = new Connection();
   connection.Execute(Query);
   ```
-* Для отображения данных:
+- Для отображения данных:
   ```
   string Query = "SELECT * FROM public.users";
   var reader = new Connection().Select(Query);
