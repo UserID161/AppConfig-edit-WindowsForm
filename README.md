@@ -16,7 +16,8 @@
 * Поле Password - пароль пользователя БД
 * Поле Databace - название БД
 <br>
-## Класс Connection
+# Приложение AppConfig
+<br>
  - Для сохранения записи:
   ```
   srting Query = "SQL запрос";
