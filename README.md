@@ -16,15 +16,14 @@
 * Поле Password - пароль пользователя БД
 * Поле Databace - название БД
 <br>
-# Приложение AppConfig
-<br>
- - Для сохранения записи:
+Класс Connection:
+* Для сохранения записи:
   ```
   srting Query = "SQL запрос";
   Connection connection = new Connection();
   connection.Execute(Query);
   ```
- - Для отображения данных:
+* Для отображения данных:
   ```
   string Query = "SELECT * FROM public.users";
   var reader = new Connection().Select(Query);
