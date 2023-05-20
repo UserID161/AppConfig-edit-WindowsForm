@@ -15,7 +15,7 @@
 * Поле User ID - имя пользователя БД
 * Поле Password - пароль пользователя БД
 * Поле Databace - название БД
-<br>1.Класс Conection:
+<br> # Класс Conection:
  - Для сохранения записи:
   ```
   srting Query = "SQL запрос";
