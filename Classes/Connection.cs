@@ -13,51 +13,6 @@ namespace AppConfig
     
     public class Connection
     {
-        /*
-        public NpgsqlConnection conn;
-        string connectionString = ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
-         public Connection()
-         {
-             conn = new NpgsqlConnection(connectionString);
-         }
-      
-        public bool isConnection
-         {
-             get
-             {
-                 if(conn.State == ConnectionState.Closed)
-                     conn.Open();
-                 return true;                
-             }
-         }
-    }
-    
-   /* public class Connection
-    {
-        private NpgsqlConnection conn;
-        public NpgsqlConnection GetNpgsqlConnection(string connectionString)
-        {
-            conn = new NpgsqlConnection(connectionString);
-            if(conn.State==ConnectionState.Open)
-            {
-                conn.Close();
-                conn.Open();
-            }
-            else
-            {
-                conn.Open();
-            }
-            return conn;
-        }
-        public void GetClose()
-        {
-            if(conn != null)
-            {
-                conn.Close();
-            }
-        }
-     */
-
         string connectionString = ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
         NpgsqlConnection conn = new NpgsqlConnection();
 
